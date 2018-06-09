@@ -16,6 +16,9 @@
         <script type="text/javascript" src="js/animation.gsap.min.js"></script>
         <script type="text/javascript" src="js/debug.addIndicators.min.js"></script>
 
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
 
 
         <link rel="icon" type="image/png" sizes="16x16" href="img/person.ico" />
@@ -23,7 +26,9 @@
     </head>
 
     <body>
+        
         <div class="main-section">
+            <div id="main-section-area">
                 <div class="nav">
                     <h2>羅芳財 adam_Lo</h2>
                 </div>
@@ -32,8 +37,18 @@
                     <div class="small"><em>我是一個</em></div>
                     <div class="typeBackground"><h1>前端工程師</h1></div>
                     <p>如果我能在計算波函數密度且測不準的世界完成學分畢業，<br>那麼我便有足夠的自信完成前端領域的挑戰。</p>
-                </div>           
+                </div>
+            </div>
+            <div id="particles-js"></div>           
         </div>
+
+        <script type="text/javascript"> 
+         
+        particlesJS.load('particles-js', 'js/particle.json', function() {
+             console.log('callback - particles.js config loaded');
+        });
+        
+        </script>
 
         <div id="aboutTrigger"></div>
         <div class="about section white-bg">
@@ -257,7 +272,7 @@
                      .addTo(controller);
 
 
-
+        
               
 
 
