@@ -1,5 +1,5 @@
 
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -34,9 +34,9 @@
                 </div>
                 <div class="section-content wow fadeInUp">
                     <!-- <h1>FRONT-END ENGINEER</h1> -->
-                    <div class="small"><em>我是一個</em></div>
-                    <div class="typeBackground"><h1>前端工程師</h1></div>
-                    <p>如果我能在計算波函數密度且測不準的世界完成學分畢業<br>那麼我便有足夠的自信完成前端領域的挑戰</p>
+                    <div class="small"><em>I'm</em></div>
+                    <div class="typeBackground"><h1 class="type-title"></h1></div>
+                    <p><span class="type-content-1"></span><br><span class="type-content-2"></span></p>
                 </div>
             </div>
             <div id="particles-js"></div>           
@@ -44,28 +44,52 @@
 
         <script type="text/javascript"> 
          
-        particlesJS.load('particles-js', 'js/particle.json', function() {
-             console.log('callback - particles.js config loaded');
-        });
-        
+        particlesJS.load('particles-js', 'js/particle.json');
+        $(document).ready(function(){
+          typeScript('.type-title','Front-End Engineer')
+          .then(()=>{  
+            typeScript('.type-content-1','If I can graduate in the world of calculating wave function density and uncertainty',20)
+            .then(()=>{
+                typeScript('.type-content-2','I have enough confidence to complete the front-end challenge',20)
+            })
+          })
+        })
+
+        function typeScript (target,str,typeSpeed) {
+          return new Promise ((resolve) => { 
+            let n = 0,localDelayTime = 0,localTypeSpeed = 80
+            if(typeSpeed) localTypeSpeed = typeSpeed
+            $(target).html('');
+            let timeInterval = setInterval(function() {
+                n = n + 1;
+                $(target).html(str.slice(0, n))
+                if (n === str.length) {
+                    clearInterval(timeInterval)
+                    resolve()
+                }
+            }, localTypeSpeed);
+          })
+        }
         </script>
 
         <div id="aboutTrigger"></div>
         <div class="about section white-bg">
             <div class="section-content wow fadeInUp">
                 <div class="title">
-                    <h1>簡介</h1>
+                    <h1>Introduction</h1>
                     <!-- <img src="images/about-icon.png" width="40px" alt="profile icon"> -->
                 </div>
 
                 <div class="content">
                     <div>
-                        <h2>羅芳財 adam_Lo</h2>
+                        <h2>羅芳財 Adam_Lo</h2>
                         <p>
-                           原本是一個在半導體業工作的理工人<br/>
-                            因為理解到將來的社會需要的是多元能力的人才<br/>便下定決心前往資策會進行為期半年的前端工程師進修<br/>
-                            這段期間學習了網頁相關前後端課程<br/>而最後也藉由所學之課程內容完成了個人靜態網站之架設以及專題成果展<br/>
-                            而在學習的過程中深深發覺寫code的樂趣<br/>按照邏輯一步一步推演到最後畫面順利地呈現非常令人感到興奮<br/>覺得這樣的過程十分令人著迷
+                            Currently working in a company engaged in patent search,<br>
+                            the company follows the spirit of srcum for product development.<br> 
+                            the team uses the <strong>Vue</strong> framework for front-end development,<br> 
+                            and I am mainly responsible for portraying new front-end functions,<br>  
+                            concatenating with the back-end(Swagger),<br>
+                            and writing front-end tests(JEST,Selenium).<br> 
                         </p>
 
                     </div>
@@ -78,27 +102,27 @@
          <div class="section blue-bg">
             <div class="experience section-content wow fadeInUp">
                 <div class="title">
-                    <h1>經歷</h1>
+                    <h1>experiences</h1>
                     <!-- <img src="images/education-icon.png" width="40px" alt="motarboard icon"> -->
                 </div>
 
                 <div class="content">
                     <div>
                         <div class="small">2018 - NOW</div>
-                        <h2>前端工程師</h2>
-                        <p>孚創雲端</p>
+                        <h2>Front-End Engineer</h2>
+                        <p>InQuartik</p>
                         <br/><br/>
                         <div class="small">2017 - 2018</div>
-                        <h2>WEB/APP前端工程師養成班</h2>
-                        <p>中央大學資策會</p>
+                        <h2>WEB/APP Front-End Engineer Program</h2>
+                        <p>NCU Institute for Information Industry</p>
                         <br/><br/>
                         <div class="small">2013 - 2017</div>
-                        <h2>半導體研發工程師</h2>
-                        <p>群創光電</p>
+                        <h2>Semiconductor R&D Engineer</h2>
+                        <p>INNOLUX</p>
                         <br/><br/>
                         <div class="small">2010 - 2013</div>
-                        <h2>物理研究所碩士</h2>
-                        <p>交通大學</p>
+                        <h2>Master of Physics</h2>
+                        <p>NCTU</p>
                     </div>
                 </div>
             </div>
@@ -110,7 +134,7 @@
         <div class="section white-bg">
             <div class="skill section-content wow fadeInUp">
                 <div class="title">
-                    <h1>技能</h1>
+                    <h1>skills</h1>
                     <!-- <img src="images/skill-icon.png" width="40px" alt="skill icon"> -->
                 </div>
 
@@ -140,6 +164,20 @@
                         </div>
 
                         <div class="dual-col">
+                            <h2>Vue</h2>
+                            <div class="w3-progress-container">
+                                <div class="w3-progressbar javascript" style="width:0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="dual-col">
+                            <h2>D3</h2>
+                            <div class="w3-progress-container">
+                                <div class="w3-progressbar javascript" style="width:0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="dual-col">
                             <h2>PHP</h2>
                             <div class="w3-progress-container">
                                 <div class="w3-progressbar php" style="width:0%"></div>
@@ -160,19 +198,7 @@
                             </div>
                         </div>
 
-                        <div class="dual-col">
-                            <h2>Illustrator</h2>
-                            <div class="w3-progress-container">
-                                <div class="w3-progressbar illustrator" style="width:0%"></div>
-                            </div>
-                        </div>
-
-                        <div class="dual-col">
-                            <h2>Photoshop</h2>
-                            <div class="w3-progress-container">
-                                <div class="w3-progressbar photoshop" style="width:0%"></div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -282,7 +308,7 @@
         <div class="section blue-bg">
             <div class="web section-content wow fadeInUp">
                 <div class="title">
-                    <h1>網站</h1>
+                    <h1>Works</h1>
                     <!-- <img src="images/about-icon.png" width="40px" alt="profile icon"> -->
                 </div>
 
@@ -345,7 +371,7 @@
         <div class="section white-bg" style="border-bottom: 1px solid #eee;">
             <div class="design section-content wow fadeInUp">
                 <div class="title">
-                    <h1>設計</h1>
+                    <h1>design</h1>
                 </div>
 
                 <div class="content">
@@ -425,7 +451,7 @@
         <div class="section white-bg">
             <div class="me section-content wow fadeInUp">
                 <div class="title">
-                    <h1>與我聯繫</h1>
+                    <h1>Contact me</h1>
                    
                 </div>
 

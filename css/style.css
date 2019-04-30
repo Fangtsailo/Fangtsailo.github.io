@@ -58,7 +58,7 @@ a:hover {
 .main-section .typeBackground{
  /* display: table;*/
   padding: 0 10px 0 10px;
-  width: 300px;
+  width: 600px;
   height: 90px;
   background-color: #deeef5;
   border-radius:10px;
@@ -66,7 +66,7 @@ a:hover {
 }
 
 .main-section h1 {
-  width: 300px;
+  padding-right: 6px;
   color: rgba(34,125,170,1);
 /*  background-color: #deeef5;
   border-radius:10px; */
@@ -81,8 +81,7 @@ a:hover {
   margin: auto;
 /*  display: table-cell;
   vertical-align: middle;*/
-  animation: typing 2s steps(5),
-              caret 1.5s steps(1) infinite;
+  animation: caret 1.5s steps(1) infinite;
 
 }
 
@@ -448,15 +447,15 @@ a > img {
   }
 
 .main-section .typeBackground{
-  width: 180px;
+  width: 320px;
   height: 54px;
 }
 
 
 .main-section h1 {
-  width: 180px;
+  /* width: 180px; */
   height: 48px;
-  font-size: 36px !important;
+  font-size: 32px !important;
 
 }
 
