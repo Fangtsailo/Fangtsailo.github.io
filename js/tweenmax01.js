@@ -361,7 +361,7 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
 					if (vars.onComplete) {
 						vars.onComplete.apply(vars.onCompleteScope || this, arguments);
 					}
-					onCompleteAll.apply(onCompleteAllScope || vars.callbackScope || this, onCompleteAllParams || _blankArray);
+					if (typeof onCompleteAll === 'function') onCompleteAll.apply(onCompleteAllScope || vars.callbackScope || this, onCompleteAllParams || _blankArray);
 				},
 				cycle = vars.cycle,
 				fromCycle = (vars.startAt && vars.startAt.cycle),

@@ -447,16 +447,16 @@ a > img {
   }
 
 .main-section .typeBackground{
-  width: 320px;
+  width: 280px;
   height: 54px;
 }
 
 
 .main-section h1 {
   /* width: 180px; */
-  height: 48px;
-  font-size: 32px !important;
-
+  line-height: 28px;
+  height: 30px;
+  font-size: 28px !important;
 }
 
 .main-section p {
