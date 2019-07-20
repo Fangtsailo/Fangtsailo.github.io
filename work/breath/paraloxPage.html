@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/parallax.min.js"></script>
+</head>
+<style type="text/css">
+	.parallax-window {
+	min-height: 400px;
+	background: transparent;
+}
+</style>
+<body>
+	<div class="parallax-window" data-parallax="scroll" data-image-src="img/cao1.png">
+  		<div class="parallax-slider">
+		    <span style="position:absolute; top: 400px; left: 400px;">Some Text</span>
+			<p>Some other Content</p>
+  		</div>
+	</div>
+
+	
+
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$('.parallax-window').parallax({imageSrc: 'img/cao1.png'});
+
+			// jQuery(window).trigger('resize').trigger('scroll');
+
+			$('.parallax-window').parallax({
+			    naturalWidth: 600,
+			    naturalHeight: 400
+			  });
+
+		});
+
+	</script>
+
+
+</body>
+</html>

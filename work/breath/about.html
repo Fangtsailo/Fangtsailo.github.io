@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Breath - 關於自潛</title>
+<link rel="stylesheet" type="text/css" href="about.css">
+<link rel="stylesheet" type="text/css" href="about_mobile.css">
+<script src="js/jquery-3.2.1.min.js"></script>
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<!-- <script type="text/javascript" src="js/masonry.pkgd.min.js"></script> -->
+
+<script type="text/javascript" src="js/tweenmax.js"></script>
+
+<script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="js/animation.gsap.min.js"></script>
+<script type="text/javascript" src="js/debug.addIndicators.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script> -->
+<!-- <script type="text/javascript" src="js/jquery.fullPage.js"></script> -->
+
+
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="img/tagLogo.ico" type="image/x-icon" />
+
+
+</head>
+<body>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '176146009612266',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.12'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/zh_TW/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<div class="fb-customerchat"
+ page_id="2147994235437143"
+ theme_color="#2369AD"
+ logged_in_greeting="Hi! How can we help you?"
+ logged_out_greeting="Welcome to Breath"
+ minimized="true"
+ >
+</div>
+
+
+
+
+
+
+
+
+
+<nav class="mobile-nav">
+
+  <ul>
+    
+    <li>
+    	<a href="index.html">Breath</a>
+    </li>
+    <li>
+      <a href="about.html">關於自潛</a>
+    </li>
+    <li>
+      <a href="course.html">課程分類</a>
+    </li>
+    <!-- <li>
+      <a href="#">裝備住宿</a>
+    </li>
+    <li>
+    	<a href="#">關於我們</a>
+    </li>
+    <li>
+    	<a href="#">會員專區</a>
+    </li> -->
+  
+  </ul>
+   
+</nav>
+<!-- 	<div class="nav-toggle"> -->
+		<div id="nav-icon">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>
+	<!-- </div> -->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#nav-icon').click(function(){
+			$(this).toggleClass('open');
+			$('.mobile-nav').toggleClass('mobile-nav-open');
+		});
+	});
+</script>
+ 
+
+
+	<div class="nav" id="nav">
+		<div class="col-xs-12 col-sm-12 col_nav">
+			<nav>
+			<ul>
+				<li><a href="index.html">Breath</a></li>
+				<li><a href="about.html">關於自潛</a></li>
+				<li><a href="course.html">課程分類</a></li>
+			</ul>
+			</nav>
+		</div>
+		<div class="clear"></div>	
+	</div>
+	
+
+
+	
+<script type="text/javascript">
+	
+	var nav =document.getElementById("nav").classList;
+	var lastScrollY = 57;
+
+	window.addEventListener('scroll',function(){
+
+		var st = this.scrollY;
+
+		var scrollResult = st-lastScrollY;
+
+  
+      if( st > lastScrollY) {
+
+
+          
+          nav.add('navUp');
+         
+          
+
+          
+      }else{
+        
+        nav.remove('navUp');
+        
+      }
+      lastScrollY = st;
+
+	});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+	<div class="banner">
+		<div class="bannerImg"></div>
+		<h1>關於自由潛水</h1>
+	</div>
+	
+
+	<section>
+		<div class="content-img col-sm-6">
+			<div class="img-box about-01">
+			</div>
+			<div class="decoration-box">
+			</div>
+		</div>
+		<div class="content-text col-sm-6">
+			<div class="vertical-center">
+				<h2>極限運動： 自由潛水</h2>
+				<p>「膽子夠大再來嘗試！」想要悠遊海中，必須先學會 自由潛水 ！自由潛水，就是在深海裡徹底扔掉氧氣瓶，徹底做一條只屬於海洋的魚。自由潛水專家恩貝托·皮里茲曾說過：「自由潛水是進入另一個世界，沒有重力、沒有顏色、沒有聲音，是一次進入靈魂的跳遠。」</p>
+			</div>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="content-text col-sm-12 about-02">
+			<div class="vertical-center">
+				<h2 class="color-white">什麼是自由潛水？</h2>
+				<p class="color-white">自由潛水，簡單說來就是不使用氧氣瓶，憋一口氣下去潛水。和水肺潛水相比，自由潛水的裝備精簡許多。沒有了浮力調節器、氧氣筒、呼吸管的繁重，剩下的只是面鏡、配重、潛水衣和蛙鞋。</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section>
+		<div class="content-img col-sm-6 float-right">
+			<div class="img-box about-03">
+			</div>
+			<div class="decoration-box radius-opsite">
+			</div>
+		</div>
+		<div class="content-text col-sm-6 float-right">
+			<div class="vertical-center">
+				<h2>人類的潛力無極限</h2>
+				<p>許多人都不知道，大部分的哺乳類動物都有一種潛水反射，即在水中心跳會自然減緩，體內的血液會透過血管的擴張與收縮重新分配，將富含氧氣的血液保留給更需要氧氣的器官（比如大腦）。另外肺腔還會適當充血，以抗衡外界水壓。由此可見，閉氣是可以練出來的，方法主要分為靜態和動態兩種。自由潛水與水肺潛水的其中一個不同之處就在於它更需要體能，而不是單純的水底觀光，所以需要持續規律的練習。</p>
+			</div>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="content-text col-sm-12 about-04">
+			<div class="vertical-center">
+				<h2 class="color-white">持之以恆的練習</h2>
+				<p class="color-white">平時伸懶腰和一些拉筋動作都能幫助增加橫膈膜的彈性。動態練習法則旨在提高肺活量。有時在泳池裡會先游五趟來回，然後開始練習憋氣一分鐘。沒有泳池？沒關係。你隨時隨地都可以練習——憋著氣走路一百步。</p>
+			</div>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="content-img col-sm-6">
+			<div class="img-box about-05">
+			</div>
+			<div class="decoration-box">
+			</div>
+		</div>
+		<div class="content-text col-sm-6">
+			<div class="vertical-center">
+				<h2>自由潛水的致命危險</h2>
+				<p>淺水昏迷(Shallow Water Black Out) 是多次在自由潛水比賽中曾出現的症狀。當參賽者不斷追求著下潛深度之後，返回沒有預留足夠的時間或者適當的速度控制。過快地衝上淺水使體內氣壓變化巨大，進而導致血中氧分降低，大腦會在沒有任何預警的情況下立刻缺氧昏厥。如果救援不及時，則會發生溺水甚至死亡。很顯然，自由潛水賽事一定不鼓勵這樣不理智的挑戰，所以一旦有淺水昏迷症狀發生，不論選手的下潛深度多麼出色驚人，成績全部作廢。</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section>
+		<div class="content-text col-sm-12 about-06">
+			<div class="vertical-center">
+				<h2 class="color-white">成為海之子</h2>
+				<p class="color-white">自由潛水是一個充滿誘惑卻不乏爭議的運動。為什麼要挑戰人體的極限？經常缺氧對身體有負面影響嗎？屏息練習是促進身體健康還是反之？這裡沒有一個正確答案，也許把握一個平衡是所有想要嘗試自由潛水的人們最佳的出路。</p>
+			</div>
+		</div>
+	</section>
+
+
+
+	<div class="QA">
+		<h1>常見問題</h1>
+	</div>
+
+
+
+
+	<div class="questionContainer">
+		<div class="questionItem">
+			<h3>不會游泳也能潛水嗎?</h3>
+			<p>
+			是的. 不需要會游泳也可以學潛水.潛水時使用調節器, 在水中可以呼吸. 使用蛙鞋在水裡可以輕易踢動. 並且配有浮力調整背心 (BCD), 充氣時為正浮力, 可以輕易地浮在水面上.</p>
+		</div>
+
+		<div class="questionItem">
+			<h3>我想要學潛水, 建議該怎麼開始?</h3>
+			<p>有兩種方式可開始您的潛水旅程 1. 取得開放水域潛水員執照 2. 先參加體驗潛水, 再取得開放水域潛水員執照.
+			</p>
+		</div>
+		<div class="questionItem">
+			<h3>SSI 和 PADI的差別是什麼?</h3>
+			<p>SSI和PADI僅是系統不同. 例如信用卡可以分為Visa 和 Master, 發卡系統不同但各國都可以使用. SSI和PADI對潛水員來說使用上並沒有差別.
+			</p>
+		</div>
+		<div class="questionItem">
+			<h3>學潛水是否有年齡上限?</h3>
+			<p>潛水沒有年齡上限.
+			但因為年齡增加體力上的考慮也是必須的. 若對體力負荷上有疑慮也歡迎來電詢問.
+			</p>
+		</div>
+		<div class="questionItem">
+			<h3>幾歲開始能學潛水?</h3>
+			<p>官方建議開始潛水年齡為10歲.<br> 
+			未成年者需要取得監護人的同意.
+			</p>
+		</div>
+		<div class="questionItem">
+			<h3>擁有自己裝備的優點是什麼?</h3>
+			<p>擁有自己裝備最大的優點是能提早適應並享受潛水過程. 潛水活動是高度仰賴裝備的運動, 與適應不同的租賃器材相比, 擁有自己的裝備能加速對裝備的掌握度, 並對適應水下環境帶來正面助益.
+			</p>
+		</div>
+		<div class="questionItem">
+			<h3>生理期間是否能潛水?</h3>
+			<p>可以的.生理期間每個人的感受有個人差別, 但若不是造成無法入睡的經痛的話, 沒有問題. 生理期間可使用衛生棉條, 但若是第一次潛水, 由於尚未適應潛水活動, 建議避開生理期. 
+			</p>
+		</div>
+		<div class="questionItem">
+			<h3>懷孕期間是否能潛水?</h3>
+			<p>在得知懷孕了之後, 建議不要進行潛水活動.血液中氮氣累積對懷孕初期胎盤血管有影響, 懷孕中後期潛水則可能會有早產風險. 請不要在懷孕期間潛水.
+			</p>
+		</div>
+		<div class="questionItem">
+			<h3>海中是否有危險生物?</h3>
+			<p>有. 墾丁海域常見的有毒生物是獅子魚和水母, 基本上有刺或有毒的生物都是為了自保, 鮮少主動攻擊. 秉持著不隨意觸摸海底生物的原則就不會有問題.
+			</p>
+		</div>
+	</div>
+
+
+    
+</body>
+</html>

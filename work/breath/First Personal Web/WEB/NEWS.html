@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>半 選物</title>
+	<style type="text/css">
+	@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+*{margin: 0;
+  padding: 0;}
+
+ img{vertical-align: top;}
+ p {font-family: 'Noto Sans TC', sans-serif; font-weight: 300;}
+ ul li {font-family: 'Noto Sans TC', sans-serif; font-weight: 300;}
+ h3 {font-family: 'Noto Sans TC', sans-serif; font-weight: 300;}
+ h4 {font-family: 'Noto Sans TC', sans-serif; font-weight: 300;}
+
+ .clear{
+	width: 100%;
+	clear: both;}
+
+.head{width: 960px;
+	height: 150px;
+	  margin: auto;
+	  position: relative;}
+
+.logo{float: left;
+		margin-top:10px;}
+.logo img{width: 140px;	
+		height: 100px;	}
+
+.member{float: right;
+		position: absolute;
+		top: 10px;
+		right: 0px;}
+.member img{width: 30px;
+			height: 30px;}
+
+
+.menu{
+	width: 960px;
+	height: 60px;
+	text-align:center;
+	position:absolute;
+	bottom:0px;
+	margin: auto;
+	z-index: 1;}
+.menu > li{display:inline-block;
+			height: 40px;
+			/*width: 150px;*/
+			font-size: 20px;
+			position: relative;
+			text-align: center;	}
+.menu > li > a{display: block;
+			padding: 5px 40px;
+			background-color: #fff;
+			text-decoration: none;
+			color: #555;
+			/*background-color: rgba(254,250,242,1);*/}
+.menu ul{position: absolute;	
+		left: 0;
+		top: 100%;	
+		width: 100%;
+		background-color: #fff;
+		display: none;
+	list-style: none;}
+
+.menu ul a {height: 40px;
+			line-height: 40px;}
+.menu > li:hover ul{display: block;					}
+.menu > li  > ul > li:hover a{background-color: rgba(254,250,242,1);}
+.menu ul li{}
+.menu ul li a{display: block;
+			text-decoration: none;
+			color:#333;
+			font-size: 16px;
+			padding: 5px 5px;	}
+
+.head:after{content: '';
+			display: block;
+			clear: both;}
+
+
+
+.sale{width: 960px;
+	margin: auto;
+	margin-top: 70px; }
+.cata{width: 270px;
+	height: 700px;
+	float: left;}
+.c_txt{width: 150px;
+	height: 50px;
+	/*border: 1px solid #555;*/
+	text-align: center;
+	line-height: 50px;
+	margin-top: 0px; }
+.s_img{float: right;}
+.s_bn{width: 540px;
+	height: 180px;
+	margin: 0px 75px 50px 75px;
+	}
+.s_bn img {height: 100%;}
+
+
+
+
+/*.new.cata*/
+/*.c_txt h3{}*/
+.n_art{float: left;
+	width: 690px;
+	height: 330px}
+
+.new{width: 960px;
+	margin: auto;
+	margin-top: 70px; }
+.new_item{width: 200px;
+		height: 300px;
+		margin: 14px;
+		border: 1px solid #a9a9aa;
+		float: left;
+		position:relative; }
+
+.new_item_img{width: 100px;
+				height: 160px;
+				position: absolute;
+				top: 5px;
+				left:50px; }
+.new_item_img img{width: 100%;
+				height: 100%;}
+.new_item_txt{
+			padding: 10px;
+			width: 180px;
+			height: 98px;
+			position: absolute;
+			top: 170px;
+			background-color: rgba(253,245,230,.5);
+			color: #555; }
+	.new_item_txt h4 {padding-bottom: 5px;}
+
+
+
+
+.page {width: 960px;
+		margin: auto;}
+.page ul{margin: 120px 0px 250px 0;
+		float: right; }
+.page li{display:inline-block;
+		list-style: none;
+		color: #666;
+		padding: 10px 10px;
+		font-size: 18px;}
+.page li a{display: block;
+		text-decoration: none;}
+.page a + a {border-left: 1px solid #666; }
+.page li:hover {color: #191970;}			
+
+
+
+.foot{width: 960px;
+	height: 300px;
+	margin: auto;
+	background-color: rgba(254,250,242,1);
+	position: relative;}
+.foot img{width: 140px;height: 100px;
+		position: absolute;
+		top: 40px;
+		left: 30px;}
+.foot p{color: #555;}
+.f_txt{position: absolute;
+	top: 160px;
+	left: 30px;}
+
+.f_item1{position: absolute;
+		top: 40px;
+		right: 430px;
+		}
+.f_item2{position: absolute;
+		top: 40px;
+		right: 330px;
+		}
+.f_item3{position: absolute;
+		top: 40px;
+		right: 230px;
+		}
+.f_item4{position: absolute;
+		top: 40px;
+		right: 130px;
+		}
+.f_item5{position: absolute;
+		top: 40px;
+		right:30px;
+		}
+.f_item1 a{text-decoration: none;
+			color: #333 ;}
+.f_item2 a{text-decoration: none;
+			color: #333 ;}
+.f_item3 a{text-decoration: none;
+			color: #333 ;}
+.f_item4 a{text-decoration: none;
+			color: #333 ;}
+.f_item5 a{text-decoration: none;
+			color: #333 ;}
+
+.f_f{position: absolute;
+	bottom: 15px;
+	right: 350px;
+	margin: auto;}
+
+
+
+
+		
+	</style>
+</head>
+<body>
+	
+<!-- head=============================================================== -->
+
+<div class="head">
+	
+	<div class="logo">
+	<a href="#">
+	<img src="LOGO.png">
+	</a>
+	</div>
+
+	<div class="member">
+		<a href="#"><img src="CART.png"></a>
+		<a href="#"><img src="mem.png"></a>
+	</div>
+
+	<ul class="menu">
+		<li>
+			<a href="#">最新消息</a>
+			<ul>
+				<li><a href="#">即時活動</a></li>
+				<li><a href="#">新品特輯</a></li>
+			</ul>
+		</li>
+		<li><a href="#">香氛</a>
+			<ul>
+				<li><a href="#">身體香香</a></li>
+				<li><a href="#">環境香香</a></li>
+			</ul>
+		</li>
+		<li><a href="#">生活雜貨</a>
+			<ul>
+				<li><a href="#">文房具</a></li>
+				<li><a href="#">餐廳</a></li>
+				<li><a href="#">浴室</a></li>
+				<li><a href="#">其他</a></li>
+			</ul>
+		</li>
+		<li><a href="#">關於半選物</a>
+			<ul>
+				<li><a href="#">品牌精神</a></li>
+				<li><a href="#">購物流程</a></li>
+				<li><a href="#">實體店鋪</a></li>
+				<li><a href="#">合作聯繫</a></li>
+			</ul>
+		</li>
+
+	</ul>
+
+</div>
+
+<!-- sale=============================================================== -->
+
+
+<div class="sale">
+	<div class="cata">
+		<div class="c_txt"><h3>/　即時活動　/</h3></div>
+	</div>
+	<div class="s_img">
+		<a href="#"><div class="s_bn"><img src="s01.png"></div></a>
+		<a href="#"><div class="s_bn"><img src="s02.png"></div></a>
+		<a href="#"><div class="s_bn"><img src="s03.png"></div></a>
+	</div>
+</div>
+
+
+
+<!-- 過場=============================================================== -->
+
+<div class="clear">	</div>
+
+<!-- new=============================================================== -->
+
+
+<div class="new">
+	
+	<div class="cata">
+		<div class="c_txt"><h3>/　新品特輯　/</h3></div>
+	</div>
+
+
+
+	<div class="n_art">
+
+		<a href="#">
+		<div class="new_item">
+			<div class="new_item_img"><img src="VA1.jpg">
+			</div>
+			<div class="new_item_txt"><h4>《一日赫本》</h4><p>今夏 Valentino 以義大利佛手柑、阿爾巴白松露香 帶著叛逆精神重回羅 ...</p>	
+			</div>
+		</div>
+		</a>
+
+		<a href="#">
+		<div class="new_item">
+			<div class="new_item_img"><img src="VA2.jpg">
+			</div>
+			<div class="new_item_txt"><h4>《生命中不可缺乏之輕》</h4><p>這季半選物試香會 	選擇以可可女士的經典名句作為引言，便是要談論關於 ...</p>
+			</div>
+		</div>
+		</a>
+	
+		<a href="#">
+		<div class="new_item">
+			<div class="new_item_img"><img src="VA3.jpg">
+			</div>
+			<div class="new_item_txt"><h4>《柚木質感傢私》</h4><p>誕生自文化創意發展逐漸超英趕美的泰國，以手感溫潤的柚木材質作為 ...</p>
+			</div>
+		</div>
+		</a>
+	</div>
+
+<!-- 2 -->
+
+	<div class="n_art">
+
+		<a href="#">
+		<div class="new_item">
+			<div class="new_item_img"><img src="VA1.jpg">
+			</div>
+			<div class="new_item_txt"><h4>《一日赫本》</h4><p>今夏 Valentino 以義大利佛手柑、阿爾巴白松露香 帶著叛逆精神重回羅 ...</p>	
+			</div>
+		</div>
+		</a>
+
+		<a href="#">
+		<div class="new_item">
+			<div class="new_item_img"><img src="VA2.jpg">
+			</div>
+			<div class="new_item_txt"><h4>《生命中不可缺乏之輕》</h4><p>這季半選物試香會 	選擇以可可女士的經典名句作為引言，便是要談論關於 ...</p>
+			</div>
+		</div>
+		</a>
+	
+		<a href="#">
+		<div class="new_item">
+			<div class="new_item_img"><img src="VA3.jpg">
+			</div>
+			<div class="new_item_txt"><h4>《柚木質感傢私》</h4><p>誕生自文化創意發展逐漸超英趕美的泰國，以手感溫潤的柚木材質作為 ...</p>
+			</div>
+		</div>
+		</a>
+	</div>
+	
+<!-- 	3	 -->
+
+	<div class="n_art">
+
+		<a href="#">
+		<div class="new_item">
+			<div class="new_item_img"><img src="VA1.jpg">
+			</div>
+			<div class="new_item_txt"><h4>《一日赫本》</h4><p>今夏 Valentino 以義大利佛手柑、阿爾巴白松露香 帶著叛逆精神重回羅 ...</p>	
+			</div>
+		</div>
+		</a>
+
+		<a href="#">
+		<div class="new_item">
+			<div class="new_item_img"><img src="VA2.jpg">
+			</div>
+			<div class="new_item_txt"><h4>《生命中不可缺乏之輕》</h4><p>這季半選物試香會 	選擇以可可女士的經典名句作為引言，便是要談論關於 ...</p>
+			</div>
+		</div>
+		</a>
+	
+		<a href="#">
+		<div class="new_item">
+			<div class="new_item_img"><img src="VA3.jpg">
+			</div>
+			<div class="new_item_txt"><h4>《柚木質感傢私》</h4><p>誕生自文化創意發展逐漸超英趕美的泰國，以手感溫潤的柚木材質作為 ...</p>
+			</div>
+		</div>
+		</a>
+
+
+	</div>	
+
+</div>
+<div class="clear">	</div>
+
+<!-- page=============================================================== -->
+
+<div class="page">
+	<ul>
+		<a href="#"><li>1</li></a>
+		<a href="#"><li>2</li></a>
+		<a href="#"><li>3</li></a>
+		<a href="#"><li>4</li></a>
+		<a href="#"><li>5</li></a>
+	</ul>
+</div>
+
+<div class="clear">	</div>
+
+
+<!-- foot=============================================================== -->
+
+<div class="foot">
+<a href="#"><img src="LOGO.png"></a>
+	<div class="f_txt">
+		<p>
+		半 選物 <br>
+		+886-3-1234-5566<br>
+		桃園市中壢區中央路232巷100號<br>
+		Halfsoul@goodmail.com.tw
+ 		</p>
+	</div>
+	<div class="f_item1">
+		<p>
+		<a href="#">最新消息</a><br><br>
+		<a href="#">新品入荷</a><br>
+		<a href="#">即時折扣</a>
+		</p>
+	</div>
+	<div class="f_item2">
+		<p>
+		<a href="#">香氛</a><br><br>
+		<a href="#">身體香香</a><br>
+		<a href="#">環境香香</a>	
+		</p>
+	</div>
+	<div class="f_item3">
+		<p>
+		<a href="#">生活雜貨</a><br><br>
+		<a href="#">文房具</a><br>
+		<a href="#">餐廳</a><br>
+		<a href="#">浴室</a><br>
+		<a href="#">其他</a>	
+		</p>
+	</div>
+	<div class="f_item4">
+		<p>
+		<a href="#">關於半選物</a><br><br>
+		<a href="#">品牌精神</a><br>
+		<a href="#">購物流程</a><br>
+		<a href="#">實體店鋪</a><br>
+		<a href="#">合作聯繫</a>
+		</p>
+	</div>
+	<div class="f_item5">
+		<p>
+		<a href="#">會員功能</a><br><br>
+		<a href="#">購物流程</a><br>
+		<a href="#">服務條款</a><br>
+		<a href="#">隱私權宣告</a>
+		</p>
+	</div>
+	<div class="f_f"><p>2017 © Half company. All rights reserved</p></div>
+</div>
+
+
+	
+<br><br><br>
+</body>
+</html>

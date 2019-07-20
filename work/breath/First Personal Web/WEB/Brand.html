@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>半 選物</title>
+	<style type="text/css">
+	@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+*{margin: 0;
+  padding: 0;}
+
+ img{vertical-align: top;}
+ p {font-family: 'Noto Sans TC', sans-serif; font-weight: 300;}
+ ul li {font-family: 'Noto Sans TC', sans-serif; font-weight: 300;}
+ h3 {font-family: 'Noto Sans TC', sans-serif; font-weight: 300;}
+ h4 {font-family: 'Noto Sans TC', sans-serif; font-weight: 300;}
+
+ .clear{
+	width: 100%;
+	clear: both;}
+
+.head{width: 960px;
+	height: 150px;
+	  margin: auto;
+	  position: relative;}
+
+.logo{float: left;
+		margin-top:10px;}
+.logo img{width: 140px;	
+		height: 100px;	}
+
+.member{float: right;
+		position: absolute;
+		top: 10px;
+		right: 0px;}
+.member img{width: 30px;
+			height: 30px;}
+
+
+.container{
+
+  width: 960px;
+  overflow: hidden;
+
+}
+
+
+.menu{
+	width: 960px;
+	height: 60px;
+	text-align:center;
+	position:absolute;
+	bottom:0px;
+	margin: auto;
+	z-index: 1;}
+.menu > li{display:inline-block;
+			height: 40px;
+			/*width: 150px;*/
+			font-size: 20px;
+			position: relative;
+			text-align: center;	}
+.menu > li > a{display: block;
+			padding: 5px 40px;
+			background-color: #fff;
+			text-decoration: none;
+			color: #555;
+			/*background-color: rgba(254,250,242,1);*/}
+.menu ul{position: absolute;	
+		left: 0;
+		top: 100%;	
+		width: 100%;
+		background-color: #fff;
+		display: none;
+	list-style: none;}
+
+.menu ul a {height: 40px;
+			line-height: 40px;}
+.menu > li:hover ul{display: block;					}
+.menu > li  > ul > li:hover a{background-color: rgba(254,250,242,1);}
+.menu ul li{}
+.menu ul li a{display: block;
+			text-decoration: none;
+			color:#333;
+			font-size: 16px;
+			padding: 5px 5px;	}
+
+.head:after{content: '';
+			display: block;
+			clear: both;}
+
+
+
+.cata{width: 960px;
+	height: 50px;
+	margin: auto;
+	margin-top: 70px; }
+.cata h3{font-size: 20px ;}
+
+
+.brand{width: 960px;
+	   margin: auto;}
+.brand iframe{margin-left: 200px;}
+
+.cooper{width: 960px;
+	 	margin: auto;}
+.cooper p{background-color: rgba(254,250,242,1);
+		padding: 30px; }
+.shop{width: 960px;
+	height: 1160px;
+	  margin: auto;
+	  position: relative;}
+.s_img1{position: absolute;
+		top: 25px;}
+.s_img2{position: absolute;
+		top: 360px;
+		right: 10px;}
+.s_img3{position: absolute;
+		top: 695px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot{width: 960px;
+	height: 300px;
+	margin: auto;
+	background-color: rgba(254,250,242,1);
+	position: relative;}
+.foot img{width: 140px;height: 100px;
+		position: absolute;
+		top: 40px;
+		left: 30px;}
+.foot p{color: #555;}
+.f_txt{position: absolute;
+	top: 160px;
+	left: 30px;}
+
+.f_item1{position: absolute;
+		top: 40px;
+		right: 430px;
+		}
+.f_item2{position: absolute;
+		top: 40px;
+		right: 330px;
+		}
+.f_item3{position: absolute;
+		top: 40px;
+		right: 230px;
+		}
+.f_item4{position: absolute;
+		top: 40px;
+		right: 130px;
+		}
+.f_item5{position: absolute;
+		top: 40px;
+		right:30px;
+		}
+.f_item1 a{text-decoration: none;
+			color: #333 ;}
+.f_item2 a{text-decoration: none;
+			color: #333 ;}
+.f_item3 a{text-decoration: none;
+			color: #333 ;}
+.f_item4 a{text-decoration: none;
+			color: #333 ;}
+.f_item5 a{text-decoration: none;
+			color: #333 ;}
+
+.f_f{position: absolute;
+	bottom: 15px;
+	right: 350px;
+	margin: auto;}
+
+
+
+
+		
+	</style>
+</head>
+<body>
+	
+<!-- head=============================================================== -->
+
+<div class="container">
+	<div class="head">
+		
+		<div class="logo">
+		<a href="#">
+		<img src="LOGO.png">
+		</a>
+		</div>
+	
+		<div class="member">
+			<a href="#"><img src="CART.png"></a>
+			<a href="#"><img src="mem.png"></a>
+		</div>
+	
+		<ul class="menu">
+			<li>
+				<a href="#">最新消息</a>
+				<ul>
+					<li><a href="#">即時活動</a></li>
+					<li><a href="#">新品特輯</a></li>
+				</ul>
+			</li>
+			<li><a href="#">香氛</a>
+				<ul>
+					<li><a href="#">身體香香</a></li>
+					<li><a href="#">環境香香</a></li>
+				</ul>
+			</li>
+			<li><a href="#">生活雜貨</a>
+				<ul>
+					<li><a href="#">文房具</a></li>
+					<li><a href="#">餐廳</a></li>
+					<li><a href="#">浴室</a></li>
+					<li><a href="#">其他</a></li>
+				</ul>
+			</li>
+			<li><a href="#">關於半選物</a>
+				<ul>
+					<li><a href="#">品牌精神</a></li>
+					<li><a href="#">購物流程</a></li>
+					<li><a href="#">實體店鋪</a></li>
+					<li><a href="#">合作聯繫</a></li>
+				</ul>
+			</li>
+	
+		</ul>
+	
+	</div>
+	
+	
+	
+	<!-- cata=============================================================== -->
+	
+	<div class="cata">
+		<h3>/ 品牌精神 /</h3>
+	</div>
+	
+	
+	
+	<!-- Brand=============================================================== -->
+	
+	<div class="brand">
+	<!-- <iframe src="//www.youtube.com/embed/" 
+	frameborder="0" allowfullscreen class="video"></iframe> -->
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/z9lHqFpO7CQ" frameborder="0" allowfullscreen></iframe>
+	</div>
+	
+	
+	<!-- cata=============================================================== -->
+	
+	<div class="cata">
+		<h3>/ 合作聯繫 /</h3>
+	</div>
+	
+	
+	
+	
+	<!-- cooper=============================================================== -->
+	
+	<div class="cooper">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, tenetur autem, totam repellendus repudiandae, natus sint illum cum voluptatum provident ducimus quas! Dolorem aspernatur aperiam quasi qui, ipsa ea ab, non velit excepturi possimus, unde eos ex officiis eveniet explicabo quia minus quod dolorum? Consequuntur labore blanditiis distinctio repellendus officiis ex illo nam cupiditate aliquam nostrum asperiores esse dolorem, magni vitae harum natus, amet accusamus placeat sunt culpa nulla maxime. Error in sint rerum praesentium commodi illo possimus dolorum. Autem odit dolore rem vero eius esse debitis distinctio vitae error quod libero ex perferendis, totam exercitationem laboriosam temporibus. Perspiciatis, recusandae?</p>
+	</div>
+	
+	<!-- cata=============================================================== -->
+	
+	<div class="cata">
+		<h3>/ 夥伴剪影 /</h3>
+	</div>
+	
+	
+	
+	<!-- shop=============================================================== -->
+	
+	<div class="shop">
+		<div class="s_img1">
+			<img src="shop01.png">
+		</div>
+		<div class="s_img2">
+			<img src="shop02.png">
+		</div>
+		<div class="s_img3">
+			<img src="shop03.png">
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<!-- <div class="clear">	</div> -->
+	<!-- foot=============================================================== -->
+	
+	<div class="foot">
+	<a href="#"><img src="LOGO.png"></a>
+		<div class="f_txt">
+			<p>
+			半 選物 <br>
+			+886-3-1234-5566<br>
+			桃園市中壢區中央路232巷100號<br>
+			Halfsoul@goodmail.com.tw
+	 		</p>
+		</div>
+		<div class="f_item1">
+			<p>
+			<a href="#">最新消息</a><br><br>
+			<a href="#">新品入荷</a><br>
+			<a href="#">即時折扣</a>
+			</p>
+		</div>
+		<div class="f_item2">
+			<p>
+			<a href="#">香氛</a><br><br>
+			<a href="#">身體香香</a><br>
+			<a href="#">環境香香</a>	
+			</p>
+		</div>
+		<div class="f_item3">
+			<p>
+			<a href="#">生活雜貨</a><br><br>
+			<a href="#">文房具</a><br>
+			<a href="#">餐廳</a><br>
+			<a href="#">浴室</a><br>
+			<a href="#">其他</a>	
+			</p>
+		</div>
+		<div class="f_item4">
+			<p>
+			<a href="#">關於半選物</a><br><br>
+			<a href="#">品牌精神</a><br>
+			<a href="#">購物流程</a><br>
+			<a href="#">實體店鋪</a><br>
+			<a href="#">合作聯繫</a>
+			</p>
+		</div>
+		<div class="f_item5">
+			<p>
+			<a href="#">會員功能</a><br><br>
+			<a href="#">購物流程</a><br>
+			<a href="#">服務條款</a><br>
+			<a href="#">隱私權宣告</a>
+			</p>
+		</div>
+		<div class="f_f"><p>2017 © Half company. All rights reserved</p></div>
+	</div>
+	
+	
+		
+	<br><br><br>
+</div>
+</body>
+</html>

@@ -1,0 +1,653 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.clear{
+
+	clear:both;
+}
+
+.overall{
+	width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider{
+	padding:150px 0 0 5px;
+	width: 95px;
+	float: left;
+
+
+}
+
+.slider::before{
+
+	content: "";
+  width: 200px;
+  height: 15px;
+  background-color: #fff100;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.6;
+	left: 0px;
+	top: 120px;
+}
+
+
+.slider a {
+
+	text-decoration: none;
+	font-size: 16px;
+	color: #7d7d7d;
+	position: relative;
+    left: 0;
+    transition: 1s;
+    z-index: 2;
+
+}
+
+.slider a::before{
+	content: "";
+  width: 150px;
+  height: 10px;
+ /* display: none;*/
+  background-color: #fff100;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+	left: 5px;
+	top: 15px;
+	transition: 1s;
+}
+
+
+
+.slider a:hover{
+	font-size: 24px;
+	left: 10px;
+	color: #434343;
+	transition: 1s;
+	font-weight: bold;
+}
+
+.slider a:hover::before{
+
+    /*display: block;*/
+    transition: 1s;
+   opacity: 0.6;
+
+}
+
+
+
+
+
+
+.slider li{
+
+	display: block;
+	padding: 10px 0px;
+}
+
+.slider nav{
+
+	position: absolute;
+
+}
+
+
+
+
+.container{
+	width: 1100px;
+	float: left;
+	/*background-color: #ccc;*/
+	background-image: url(about_img/background.png);
+	background-repeat: no-repeat;
+}
+
+
+
+
+.banner{
+
+	float: right;
+	position: relative;
+	z-index: 3;
+	width: 865px;
+	padding-top: 40px;
+	
+}
+
+.banner nav::before{
+
+	content: "";
+	display: block;
+	width: 860px;
+	height: 60px;
+	background-color: #fff;
+	position: absolute;
+	top: 24px;
+	left: 5px;
+	z-index:-2;
+	background-image: linear-gradient(0deg,#ddd 0%,#fff 30%) 
+}
+
+
+
+
+.banner nav ul li{
+	position: relative;
+	display: block;
+	float: left;
+	padding: 0 12px;
+	height: 32px;
+ 	color: #535353;
+ 	transition: 1s;
+	/*background-color: #434343;*/
+	bottom: 0px;
+	font-weight: bold;
+}
+
+.banner nav ul{
+	position: relative;
+}
+
+.banner nav ul li:first-child{
+
+	position: relative;
+	top: -40px;
+	left: 0px;
+}
+
+.banner nav ul li:not(:first-child):hover {
+	background-color: #898989;
+	/*height: 64px;
+	line-height: 64px;*/
+	color: #ffffff;
+	transition: 1s;
+	bottom:5px;
+}
+
+
+.banner nav ul li a{
+	text-decoration:none;
+	font-size: 24px;
+	color: #535353;
+	transition: 1s;
+}
+
+
+.banner nav ul li:not(:first-child):hover a{
+	color: #fff;
+	transition: 1s;
+}
+
+.banner nav ul li a img{
+
+	/*vertical-align:baseline;*/
+	display: block;
+	position: relative;
+	top: 14px;
+	left: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.intro{
+
+	width: 1100px;
+	margin-top: 50px;
+	
+}
+
+.top{
+
+	margin-top: 150px;
+}
+
+
+
+.intro .txt_all{
+	height: 600px;
+	width: 600px;
+	float: left;
+	position: relative;
+
+}
+
+.intro .txt_all .txt{
+	margin-left:50px;
+	margin-right:50px;
+
+	padding-top:0px; 
+	width: 500px;
+	height: 200px;
+	display:block;
+	float: left;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50px;
+	margin: auto;
+
+}
+
+.intro .txt_all .txt h2{
+	
+  position: relative;
+  font-size: 24px;
+  color: #626262;
+
+}
+
+
+.what .txt_all .txt h2{
+
+   color: #626262;
+
+}
+
+.intro .txt_all .txt h2::before ,
+.keep .txt_all .txt h2::before,
+.poten .txt_all .txt h2::before,
+.what .txt_all .txt h2::before{
+	
+	content: "";
+  width: 200px;
+  height: 15px;
+  background-color: #fff100;
+  position: absolute;
+  z-index: -3;
+  opacity: 0.6;
+	left: 0px;
+	top: 15px;
+	color: #626262;
+
+}
+
+.intro .txt_all .txt h2::after,
+.keep .txt_all .txt h2::after,
+.poten .txt_all .txt h2::after,
+.what .txt_all .txt h2::after{
+	
+	content: "";
+  width: 15px;
+  height: 35px;
+  background-color: #fff100;
+  position: absolute;
+  z-index: -3;
+  opacity: 0.6;
+	left: 0px;
+	top: 30px;
+	color: #626262;
+
+}
+
+.intro .txt_all .txt p{
+	padding-top: 10px;
+	font-size: 18px;
+	color: #898989;
+}
+
+
+
+.intro img{
+	margin-left: 100px;
+	/*margin-bottom: 50px;*/
+	display:block;
+	float: left;
+	box-shadow: 10px 10px 15px 1px #ccc;
+}
+
+.danger_img{
+	width: 400px;
+	height: 600px;
+  	margin-left: 100px;
+	display:block;
+	float: left;
+	background-image: url("about_img/danger.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 1200px 600px;
+
+
+}
+
+
+
+
+.intro_1 .txt_all .txt{
+
+	height: 490px;
+}
+
+
+.what{
+	width: 1100px;
+	margin-top: 50px;
+}
+
+
+.what .what_img{
+	width: 600px;
+	height: 400px;
+	float: right;
+	background-image: url("about_img/what.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 1200px 400px;
+	/*background-size: contain;*/
+}
+
+.what img{
+	display:block;
+	float: right;
+}
+
+.what .txt{
+
+	float:right;
+	width: 350px;
+/*	margin-left:100px;
+	margin-right:50px;*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 50px;
+	margin: auto;
+	height: 100px;
+
+}
+
+.what .txt p{
+
+	padding-top: 10px;
+	color: #898989;
+
+}
+
+
+.what .txt_all{
+	height: 400px;
+	width: 400px;
+	float: right;
+	position: relative;
+}
+
+
+.poten{
+	width: 1100px;
+	margin-top: 50px;
+}
+
+.poten img{
+	display:block;
+	float: left;
+	margin-left: 50px;
+	box-shadow: 10px 10px 15px 1px #ccc;
+}
+
+
+
+.poten .poten_img{
+	width: 600px;
+	height: 400px;
+	float: left;
+	background-image: url("about_img/poten.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 1200px 400px;
+	/*background-size: contain;*/
+}
+
+.poten .txt_all{
+	height: 400px;
+	width: 400px;
+	float: left;
+	position: relative;
+}
+
+
+.poten .txt_all .txt{
+
+	float:left;
+	width: 350px;
+/*	margin-left:50px;
+	margin-right:50px;
+*/
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50px;
+	margin: auto;
+	height: 200px;
+}
+
+.poten_1 .txt_all .txt{
+
+	height: 175px;
+}
+
+
+.poten h2{
+
+	color: #626262;
+}
+
+.poten .txt p{
+
+	padding-top: 10px;
+	color: #898989;
+
+}
+
+
+.poten a{
+
+	display: block;
+	position: absolute;
+	text-decoration: none;
+	width: 100px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 30px;
+	background-color: #c9c9c9;
+	bottom: 0px;
+	right: 10px;
+	border-radius: 5px;
+	color: #fff;
+	transition: 1s;
+/*	font-weight: bold;*/
+
+}
+
+.poten a:hover {
+    
+    background-color: #eee;
+    color: #000;
+    transition: 1s;
+}
+
+
+
+.keep{
+	width: 1100px;
+	margin-top: 50px;
+}
+
+.keep img{
+	display:block;
+	float: right;
+	margin-right:100px;
+	box-shadow: 10px 10px 15px 1px #ccc;
+}
+
+
+.onepeople_img {
+	width: 400px;
+	height: 600px;
+  	margin-right: 100px;
+	display:block;
+	float: right;
+	background-image: url("about_img/onepeople.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 1200px 600px;
+
+
+}
+
+
+.keep .txt_all{
+	height: 600px;
+	width: 600px;
+	float: right;
+	position: relative;
+}
+
+.keep .txt_all .txt{
+
+	float:right;
+	width: 450px;
+/*	margin-left:100px;
+	margin-right:50px;*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 50px;
+	margin: auto;
+	height: 300px;
+
+}
+
+.keep_1 .txt_all .txt{
+
+
+	height: 200px;
+
+}
+
+
+.keep h2{
+	color: #626262;
+}
+
+.keep .txt p{
+
+	padding-top: 10px;
+	color: #898989;
+
+}
+
+
+.question{
+	margin-top: 100px;
+	width: 1100px;
+}
+
+.question h2{
+
+	padding-left: 100px;
+	margin-bottom: 50px;
+	position: relative;
+	color: #626262;
+}
+
+
+.question h2::before{
+	content: "";
+  width: 400px;
+  height: 15px;
+  background-color: #fff100;
+  position: absolute;
+  z-index: -3;
+  opacity: 0.6;
+	left: 100px;
+	bottom:0px;
+}
+
+
+.q_item{
+
+	width: 900px;
+	margin-left: 150px;
+	margin-top: 25px;
+}
+
+
+.q_item p{
+
+	margin-top: 10px;
+	margin-left: 50px;
+	color: #898989;
+}
+
+.q_item h3{
+
+	margin-top: 25px;
+	position: relative;
+	color: #626262;
+
+}
+
+.q_item h3::before{
+content: "";
+  width: 15px;
+  height: 60px;
+  background-color: #fff100;
+  position: absolute;
+  z-index: -3;
+  opacity: 0.6;
+	left: 0px;
+	bottom:-50px;
+
+}
+
+
+.link{
+
+	display: block;
+	width: 1200px;
+	height: 100px;
+	color:#fff;
+	background-color: #aaa;
+	float: left;
+	text-align: center;
+	line-height: 100px;
+	font-size: 30px;
+	font-weight: bold;
+	transition: 1s;
+	font-weight: bold;
+	margin-top: 25px;
+
+}
+
+
+.link:hover {
+    
+    background-color: #eee;
+    color: #000;
+    transition: 1s;
+}
+
+
+

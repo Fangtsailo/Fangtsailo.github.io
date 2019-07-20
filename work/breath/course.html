@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Breath - 課程分類</title>
+<link rel="stylesheet" type="text/css" href="course.css">
+<link rel="stylesheet" type="text/css" href="course_mobile.css">
+<link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+<script src="js/jquery-3.2.1.min.js"></script>
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<!-- <script type="text/javascript" src="js/masonry.pkgd.min.js"></script> -->
+
+<script type="text/javascript" src="js/tweenmax.js"></script>
+
+<script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="js/animation.gsap.min.js"></script>
+<script type="text/javascript" src="js/debug.addIndicators.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script> -->
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="img/tagLogo.ico" type="image/x-icon" />
+
+
+
+
+</head>
+<body>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '176146009612266',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.12'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/zh_TW/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<div class="fb-customerchat"
+ page_id="2147994235437143"
+ theme_color="#2369AD"
+ logged_in_greeting="Hi! How can we help you?"
+ logged_out_greeting="Welcome to Breath"
+ minimized="true"
+ >
+</div>
+
+
+
+
+
+
+
+
+
+<nav class="mobile-nav">
+
+  <ul>
+    
+        <li>
+    	<a href="index.html">Breath</a>
+    </li>
+    <li>
+      <a href="about.html">關於自潛</a>
+    </li>
+    <li>
+      <a href="course.html">課程分類</a>
+    </li>
+    <!-- <li>
+      <a href="#">裝備住宿</a>
+    </li>
+    <li>
+    	<a href="#">關於我們</a>
+    </li>
+    <li>
+    	<a href="#">會員專區</a>
+    </li> -->
+  
+  </ul>
+   
+</nav>
+<!-- 	<div class="nav-toggle"> -->
+		<div id="nav-icon">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>
+	<!-- </div> -->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#nav-icon').click(function(){
+			$(this).toggleClass('open');
+			$('.mobile-nav').toggleClass('mobile-nav-open');
+		});
+	});
+</script>
+ 
+
+
+	<div class="nav" id="nav">
+		<div class="col-xs-12 col-sm-12 col_nav">
+			<nav>
+			<ul>
+				<li><a href="index.html">Breath</a></li>
+				<li><a href="about.html">關於自潛</a></li>
+				<li><a href="course.html">課程分類</a></li>
+			</ul>
+			</nav>
+		</div>
+		<div class="clear"></div>	
+	</div>
+	
+
+
+	
+<script type="text/javascript">
+
+	$(function(){
+
+		$('#nav ul li:nth-child(5)').innerHtml ='hello';
+
+	});
+	
+	var nav =document.getElementById("nav").classList;
+	var lastScrollY = 57;
+
+	window.addEventListener('scroll',function(){
+
+		var st = this.scrollY;
+
+		var scrollResult = st-lastScrollY;
+
+  
+      if( st > lastScrollY) {
+
+
+          
+          nav.add('navUp');
+         
+          
+
+          
+      }else{
+        
+        nav.remove('navUp');
+        
+      }
+      lastScrollY = st;
+
+	});
+
+
+</script>
+
+<div id="fullpage">
+
+<section class="section" id="course01">
+
+	<!-- <div id="course01"><img src="img/course01.jpg"></div> -->
+	<div class="col-xs-12 col-sm-6 floatRight">
+		<h2>體驗自由潛水</h2>
+		<p class="price">NT5,000</p>
+		<p class="content">如果您不會游泳、又非常怕水，建議您先體驗自由潛水，試試看能不能適應自由潛水的活動；過程中練習靜態和動態閉氣、鴨式潛水等技巧。
+		<div class="join-btn" id="join_btn_1">加入</div>
+		</p>
+	</div>
+
+
+
+	<div class="txt_detail">
+	
+		<div class="col-xs-12 col-sm-6 txt_detail_item1">
+			<div class="inner">
+				<h3>體驗自由潛水</h3>
+				<h4>Day1</h4>
+				<p>學科上課 / 靜態閉氣<br>
+				海洋實習-動態閉氣<br>
+				海洋實習-鴨式潛水</p>
+				<h4>Day2</h4>
+				<p>海洋實習-10m拉繩 / 延繩下潛<br>
+				海洋實習-徒手上升 / 自由下潛</p>
+				<h4>Day3</h4>
+				<p>海洋實習-動態暖身 / 10m救援<br>
+				學科考試 / 結業</p>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-6 txt_detail_item1">
+			<div class="inner">
+				<h3>費用說明:</h3>
+				<h4>NT16,000</h4>
+				<p>包含教學費用、SSI國際簽證和教材。<br>
+				不含自由潛水裝備和食宿。<br>
+				本店提供裝備租賃及住宿服務。<br>
+				若有需要可於預約程序中選填。</p>
+				<div href="" class="back" id="back_1">返回</div>
+				<div href="" class="join">加入</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="section" id="course02">
+	<!-- <div id="course01"><img src="img/course01.jpg"></div> -->
+	<div class="col-xs-12 col-sm-6 floatRight">
+		<h2>自由潛水員｜Level 1｜10m</h2>
+		<p class="price">NT16,000</p>
+		<p class="content">課程中將接觸到放鬆的腹式呼吸、更有效率的全呼吸、靜態閉氣、鴨式潛水和恆定配重著蛙鞋潛到至少10m。<div class="join-btn" id="join_btn_1">加入</div>
+		</p>
+	</div>
+
+
+
+	<div class="txt_detail">
+	
+		<div class="col-xs-12 col-sm-6 txt_detail_item1">
+			<div class="inner">
+				<h3>自由潛水員</h3>
+				<h4>Day1</h4>
+				<p>學科上課 / 靜態閉氣<br>
+				海洋實習-動態閉氣<br>
+				海洋實習-鴨式潛水</p>
+				<h4>Day2</h4>
+				<p>海洋實習-10m拉繩 / 延繩下潛<br>
+				海洋實習-徒手上升 / 自由下潛</p>
+				<h4>Day3</h4>
+				<p>海洋實習-動態暖身 / 10m救援<br>
+				學科考試 / 結業</p>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-6 txt_detail_item1">
+			<div class="inner">
+				<h3>費用說明:</h3>
+				<h4>NT16,000</h4>
+				<p>包含教學費用、SSI國際簽證和教材。<br>
+				不含自由潛水裝備和食宿。<br>
+				本店提供裝備租賃及住宿服務。<br>
+				若有需要可於預約程序中選填。</p>
+				<div href="" class="back" id="back_1">返回</div>
+				<div href="" class="join">加入</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+<section class="section" id="course03">
+	<!-- <div id="course01"><img src="img/course01.jpg"></div> -->
+	<div class="col-xs-12 col-sm-6 floatRight">
+		<h2>進階潛水員｜Level 2｜20m</h2>
+		<p class="price">NT20,000</p>
+		<p class="content">您將體驗更深入的放鬆身體、全呼吸的拉伸、長時間的靜態閉氣、更有效率的耳壓平衡方式，下潛到至少 20m 的深度。<div class="join-btn" id="join_btn_1">加入</div>
+		</p>
+	</div>
+
+
+
+	<div class="txt_detail">
+	
+		<div class="col-xs-12 col-sm-6 txt_detail_item1">
+			<div class="inner">
+				<h3>進階潛水員</h3>
+				<h4>Day1</h4>
+				<p>學科上課 / 靜態閉氣<br>
+				海洋實習-動態閉氣<br>
+				海洋實習-鴨式潛水</p>
+				<h4>Day2</h4>
+				<p>海洋實習-10m拉繩 / 延繩下潛<br>
+				海洋實習-徒手上升 / 自由下潛</p>
+				<h4>Day3</h4>
+				<p>海洋實習-動態暖身 / 20m救援<br>
+				學科考試 / 結業</p>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-6 txt_detail_item1">
+			<div class="inner">
+				<h3>費用說明:</h3>
+				<h4>NT20,000</h4>
+				<p>包含教學費用、SSI國際簽證和教材。<br>
+				不含自由潛水裝備和食宿。<br>
+				本店提供裝備租賃及住宿服務。<br>
+				若有需要可於預約程序中選填。</p>
+				<div href="" class="back" id="back_1">返回</div>
+				<div href="" class="join">加入</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="section" id="course04">
+	<!-- <div id="course01"><img src="img/course01.jpg"></div> -->
+	<div class="col-xs-12 col-sm-6 floatRight">
+		<h2>名仕潛水員｜Level 3｜30m</h2>
+		<p class="price">NT25,000</p>
+		<p class="content">此課程是您成為自由潛水教練的必要課程，負壓的拉伸放鬆、負壓的暖身方式、口腔加壓的耳壓平衡方式，下潛到至少 30m 的深度。
+			<div class="join-btn" id="join_btn_1">加入</div>
+		</p>
+	</div>
+
+
+
+	<div class="txt_detail">
+	
+		<div class="col-xs-12 col-sm-6 txt_detail_item1">
+			<div class="inner">
+				<h3>名仕潛水員</h3>
+				<h4>Day1</h4>
+				<p>學科上課 / 靜態閉氣<br>
+				海洋實習-動態閉氣<br>
+				海洋實習-鴨式潛水</p>
+				<h4>Day2</h4>
+				<p>海洋實習-30m拉繩 / 延繩下潛<br>
+				海洋實習-徒手上升 / 自由下潛</p>
+				<h4>Day3</h4>
+				<p>海洋實習-動態暖身 / 30m救援<br>
+				學科考試 / 結業</p>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-6 txt_detail_item1">
+			<div class="inner">
+				<h3>費用說明:</h3>
+				<h4>NT25,000</h4>
+				<p>包含教學費用、SSI國際簽證和教材。<br>
+				不含自由潛水裝備和食宿。<br>
+				本店提供裝備租賃及住宿服務。<br>
+				若有需要可於預約程序中選填。</p>
+				<div href="" class="back" id="back_1">返回</div>
+				<div href="" class="join">加入</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+	$(function(){
+
+		$('#fullpage').fullpage();
+
+
+		$('.join-btn').click(function(){
+			$(this).parent().siblings().animate({left:'0'});
+		});
+
+		$('.back').click(function(){
+			$(this).parent().parent().parent().animate({left:'-100%'});
+		});
+
+
+		$('#fullpage').scroll(function(){  
+
+		 	$('.txt_detail').animate({left:'-100%'});
+
+	    });  
+
+
+		// $(window).scroll(function(){
+
+
+
+		// 	$('.txt_detail').animate({left:'-100%'});
+
+
+		// 	var position = $('#course02').offset();  
+		// 	var x = position.left;  
+		// 	var y = position.top;  
+		// 	console.log('x:'+x+', y:'+y);
+
+		// });
+
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+	
+<!--
+
+					
+	
+	<div class="row2">
+		<div class="col-xs-12 col-sm-12 nopad-about">
+			<img src="img/course_2.png">
+			<div class="col-xs-12 col-sm-6 col-row-2">
+				<h2>自由潛水員｜Level 1｜10m</h2>
+				<p>NT16,000</p>
+				<p>您的第一個自由潛水課程，過程中將接觸到放鬆的腹式呼吸、更有效率的全呼吸、靜態閉氣、鴨式潛水和恆定配重著蛙鞋潛到至少10m。
+				<p class="join-btn">加入</p></p>
+			</div>
+
+			<div class="col-xs-12 col-sm-6">
+				
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	
+	<div class="row3">
+		<div class="col-xs-12 col-sm-12 nopad-about">
+			<img src="img/course_3.png">
+
+
+
+		 	<div class="col-xs-12 col-sm-6 row3_first_page">
+
+				<h2> 進階自由潛水員｜Level 2｜20m</h2>
+		 		<p>NT20,000</p>
+		 		<p>您將體驗更深入的放鬆身體、全呼吸的拉伸、長時間的靜態閉氣、更有效率的耳壓平衡方式，下潛到至少 20m 的深度。
+		 		<p class="join-btn join_btn_3" id="join_btn_3">加入</p></p>
+				
+
+		 		
+		 	</div>
+		 	<div class="col-xs-12 col-sm-6 col-row-3 nopad-about col-row3-video" id="slide_detail_all_3">
+				
+
+
+
+
+				<div class="slide_detail_all_video slide_detail_all_video">
+
+				</div>
+
+
+				<div class="txt_detail">
+					
+					<div class="col-xs-6 col-sm-6 txt_detail_item1">
+						<div class="inner">
+							<h3>課程安排:</h3>
+							<h4>Day1</h4>
+							<p>學科上課 / 靜態閉氣<br>
+							海洋實習-動態閉氣<br>
+							海洋實習-鴨式潛水</p>
+							<h4>Day2</h4>
+							<p>海洋實習-10m拉繩 / 延繩下潛<br>
+							海洋實習-徒手上升 / 自由下潛</p>
+							<h4>Day3</h4>
+							<p>海洋實習-動態暖身 / 10m救援<br>
+							學科考試 / 結業</p>
+						</div>
+					</div>
+
+					<div class="col-xs-6 col-sm-6 txt_detail_item1">
+						<div class="inner">
+							<h3>費用說明:</h3>
+							<h4>NT16,000</h4>
+							<p>包含教學費用、SSI國際簽證和教材。<br>
+							不含自由潛水裝備和食宿。<br>
+							本店提供裝備租賃及住宿服務。<br>
+							若有需要可於預約程序中選填。</p>
+							<a href="#" class="back" id="back_3"><p>返回</p></a>
+							<a href="#" class="join" id="join_3"><p>加入</p></a>
+						</div>
+					</div>
+
+						
+						
+					<div class="clear"></div>
+
+				</div> 
+
+
+
+
+
+
+
+
+
+
+
+		 	</div>
+		 	<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+	
+	<div class="row4">
+		<div class="col-xs-12 col-sm-12 nopad-about">
+			<img src="img/course_4.png">
+			<div class="col-xs-12 col-sm-6 col-row-4">
+				<h2>名仕自由潛水員｜Level 3｜30m</h2>
+				<p>NT25,000</p>
+				<p>此課程是您成為自由潛水教練的必要課程，負壓的拉伸放鬆、負壓的暖身方式、口腔加壓的耳壓平衡方式，下潛到至少 30m 的深度。
+				<p class="join-btn">加入</p></p>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+					</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+function $id(id){
+  return document.getElementById(id);
+};
+
+
+
+function moveToRight(){
+
+  var slide_detail_all = document.getElementById("slide_detail_all");
+
+  slide_detail_all.style.marginLeft="0";
+
+}
+
+
+
+function moveToLeft(){
+
+  var slide_detail_all = document.getElementById("slide_detail_all");
+
+  slide_detail_all.style.marginLeft="-100%";
+
+}
+
+
+
+ var join_btn_1 = document.getElementById("join_btn_1");
+ join_btn_1.addEventListener("click",moveToRight,false);
+
+
+
+
+  var back_1 = document.getElementById("back_1");
+ back_1.addEventListener("click",moveToLeft,false);
+
+
+
+
+
+
+</script>
+ -->
+
+
+
+
+
+
+
+    
+</body>
+</html>

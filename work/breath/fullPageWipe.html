@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href="onepage-scroll.css"> -->
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="index_mobile.css">
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<script type="text/javascript" src="js/tweenmax.js"></script>
+	<script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+	<script type="text/javascript" src="js/animation.gsap.min.js"></script>
+	<script type="text/javascript" src="js/debug.addIndicators.min.js"></script>
+
+	<!-- <script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script> -->
+
+	 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+<body>
+
+<nav class="mobile-nav">
+
+  <ul>
+    
+    <li>
+    	<a href="index.html">Breath</a>
+    </li>
+    <li>
+      <a href="#">關於自由潛水</a>
+    </li>
+    <li>
+      <a href="#">課程分類</a>
+    </li>
+    <li>
+      <a href="#">裝備住宿</a>
+    </li>
+    <li>
+    	<a href="#">關於我們</a>
+    </li>
+    <li>
+    	<a href="#">會員專區</a>
+    </li>
+  
+  </ul>
+   
+</nav>
+<!-- 	<div class="nav-toggle"> -->
+		<div id="nav-icon">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>
+	<!-- </div> -->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#nav-icon').click(function(){
+			$(this).toggleClass('open');
+			$('.mobile-nav').toggleClass('mobile-nav-open');
+		});
+	});
+</script>
+ 
+
+
+	<div class="nav" id="nav">
+		<div class="col-xs-12 col-sm-12 col_nav">
+			<nav>
+			<ul>
+				<li><a href="#">關於自潛</a></li>
+				<li><a href="#">課程分類</a></li>
+				<li><a href="#">裝備住宿</a></li>
+				<li><a href="#">關於我們</a></li>
+				<li><a href="#">會員專區</a></li>
+			</ul>
+			</nav>
+		</div>
+		<div class="clear"></div>	
+	</div>
+	
+
+<script type="text/javascript">
+	
+	var nav =document.getElementById("nav").classList;
+	var lastScrollY = 57;
+
+	window.addEventListener('scroll',function(){
+
+		var st = this.scrollY;
+
+		var scrollResult = st-lastScrollY;
+
+  
+      if( st > lastScrollY) {
+
+
+          
+          nav.add('navUp');
+         
+          
+
+          
+      }else{
+        
+        nav.remove('navUp');
+        
+      }
+      lastScrollY = st;
+
+	});
+
+
+</script>
+
+<div id="pinContainer">
+	<section class="panel blue section">
+		<section class="banner">
+		<div class="col-xs-12 col-sm-12 col_banner padd-0" id="imgContainer">
+			<div class="video-foreground">
+		      <iframe muted src="https://www.youtube.com/embed/F2_utGDI0OA?start=22&end=59&controls=0&mute=1&showinfo=0&rel=0&autoplay=1&loop=1&playlist=F2_utGDI0OA" frameborder="0" allowfullscreen></iframe>
+		    </div>
+		    <!-- <div class="shadow"></div> -->
+
+			<div class="wrapper">
+				<svg class="mysvg" x="0px" y="0px" viewBox="0 0 370 130">
+					<g class="line">
+
+						<path class="line-g" d="M140.28,75.15c-8-1.26-15.78-4.4-16.59-8.14.81-3.75,8.56-6.89,16.59-8.14,1.91-.46,3.37-1.56,3.18-3.46q-5.63-38.19-45.32-38.23H83.72A9.76,9.76,0,0,0,74,26.93v80.15a9.76,9.76,0,0,0,9.76,9.76H98.14q39.72,0,45.32-38.23C143.65,76.72,142.19,75.61,140.28,75.15ZM122,101.56c-1.56,3.11-4.76,7.17-7.61,7.52-6.58.8-13.49.09-20.1-1-4.25-.69-6.24-4.08-6.11-8.92.29-10.72.12-21.44.1-32.17s.19-21.45-.1-32.17c-.13-4.84,1.85-8.23,6.11-8.92,6.62-1.07,13.52-1.78,20.1-1,2.84.35,6,4.41,7.61,7.52,7.67,15.29,6.83,17.36-8.13,24.83-2.21,1.1-4.37,2.32-6.63,3.29a7.53,7.53,0,0,0-4.77,5.77h-.11c0,.22,0,.44,0,.66s0,.44,0,.66h.11a7.53,7.53,0,0,0,4.77,5.77c2.26,1,4.43,2.19,6.63,3.29C128.87,84.2,129.7,86.27,122,101.56Z"/>
+						<path class="line-g" d="M151.91,116.85h0a3.72,3.72,0,0,1-3.72-3.72V72.68A3.72,3.72,0,0,1,151.91,69h.51a2.31,2.31,0,0,1,2.31,2.31h0a2.31,2.31,0,0,0,4.19,1.35,12.1,12.1,0,0,1,2.76-2.74,12.63,12.63,0,0,1,7.14-2.35,29.24,29.24,0,0,1,2.94.19V72a2.87,2.87,0,0,1-2.87,2.87h-1.5a3.81,3.81,0,0,0-1.64.36q-9.67,4.65-10.11,16.33v21.6A3.72,3.72,0,0,1,151.91,116.85Z"/>
+						<path class="line-g" d="M206.85,101.8h0a3.49,3.49,0,0,1,2.31,5.19,20.31,20.31,0,0,1-5.46,5.84,21.33,21.33,0,0,1-12.94,4q-9.81,0-15.88-6.9t-6.07-18.11q0-11.44,6.31-18.48a20.35,20.35,0,0,1,15.84-7q9.39,0,15.1,6.5,4.85,5.51,5.68,15.66a3.5,3.5,0,0,1-3.48,3.78H180.74A3.47,3.47,0,0,0,177.26,96q.68,7.82,4.4,10.92a14.82,14.82,0,0,0,9.62,3.79,12.63,12.63,0,0,0,11.81-7.1A3.49,3.49,0,0,1,206.85,101.8Zm-7-15.1a3.51,3.51,0,0,0,3.4-4.28,17.88,17.88,0,0,0-.85-2.88,12.21,12.21,0,0,0-4.17-5.33q-4-3-10.11-1.93a8.43,8.43,0,0,0-2.56.87,14.62,14.62,0,0,0-7.4,9.18,3.48,3.48,0,0,0,3.37,4.38Z"/>
+						<path class="line-g" d="M250.15,115.52h-2.38a2.38,2.38,0,0,1-2.38-2.11v-.07a2.39,2.39,0,0,0-4.08-1.42q-4.91,4.92-13.25,4.92-8.06,0-12.37-4.27a13.92,13.92,0,0,1-4.31-10.26,14.38,14.38,0,0,1,6.16-11.94q6.16-4.68,21-4.68,1.35,0,3.8.09a2.43,2.43,0,0,0,2.5-2.53,21,21,0,0,0-.82-5.6,7.33,7.33,0,0,0-3.72-4.05,15.92,15.92,0,0,0-7.49-1.52q-10,0-12.64,6.79a2.37,2.37,0,0,1-2.62,1.48L215.29,80a2.4,2.4,0,0,1-1.88-3.14q3.79-10.54,20.42-10.54,9.91,0,14.06,4.39T252,85.89v20.34a43.59,43.59,0,0,0,.47,6.58A2.37,2.37,0,0,1,250.15,115.52Zm-5.31-23.94q-4.55-.28-6.92-.28-8.82,0-13.7,2.9a9.27,9.27,0,0,0-4.88,8.46,7.91,7.91,0,0,0,2.63,6q2.63,2.47,7.61,2.47a14.13,14.13,0,0,0,11.07-4.89A16.79,16.79,0,0,0,245,94.72Q245,93.38,244.83,91.58Z"/>
+						<path class="line-g" d="M281.13,113.73h0a2.92,2.92,0,0,1-2.65,2.9q-2.31.22-4.18.22-13.89,0-13.89-14.52v-26a2.9,2.9,0,0,0-2.9-2.9h-2.69a2.9,2.9,0,0,1-2.9-2.9v0a2.9,2.9,0,0,1,2.9-2.9h2.77a2.9,2.9,0,0,0,2.9-2.82l.18-6.66a2.9,2.9,0,0,1,2.62-2.81l1.19-.11a2.9,2.9,0,0,1,3.18,2.89v6.62a2.9,2.9,0,0,0,2.9,2.9h4.92a2.9,2.9,0,0,1,2.9,2.9v0a2.9,2.9,0,0,1-2.9,2.9h-4.92a2.9,2.9,0,0,0-2.9,2.9v27.2q0,7.41,7.68,7.41,1.26,0,2.68-.13A2.88,2.88,0,0,1,281.13,113.73Z"/>
+		       		 	<path class="line-g" d="M322.7,116.85h-2.06a3.19,3.19,0,0,1-3.19-3.19V83.89a38.69,38.69,0,0,0-.73-8.71,9.16,9.16,0,0,0-3.44-5A9.88,9.88,0,0,0,307,68a13.56,13.56,0,0,0-10.89,5.32q-4.38,5.32-4.38,14.25v26.06a3.19,3.19,0,0,1-3.19,3.19H286.5a3.19,3.19,0,0,1-3.19-3.19v-67a3.19,3.19,0,0,1,3.19-3.19h2.06a3.19,3.19,0,0,1,3.19,3.19V62.88a3.2,3.2,0,0,0,5.38,2.32A16,16,0,0,1,308.2,61a18.69,18.69,0,0,1,8.52,1.88,14.29,14.29,0,0,1,5.73,4.95,19.73,19.73,0,0,1,2.72,6,47.5,47.5,0,0,1,.73,10v29.77A3.19,3.19,0,0,1,322.7,116.85Z"/>
+		        		<path class="line-g" d="M141.66,41.5c0-2.42.07-5.35-.18-8.25-.23-2.73-2.17-4.47-4.38-5.73Q124.21,20.18,111.22,13c-5.27-2.9-11.1-2.54-16.84-2.47-10,.12-19.94.27-30.31.41L63.84.64C70.64.56,77.19.52,83.74.4,89.12.31,94.51.14,99.89,0l12.4,1.6c5.94,3.3,11.89,6.57,17.81,9.9,5.28,3,10.61,5.85,15.73,9.07a13.67,13.67,0,0,1,6.86,12.72c-.15,4.46.09,8.93.15,13.4C152.46,49.67,142.22,45.25,141.66,41.5Z"/>
+		        		<path class="line-g" d="M38.48,1.09l22-.5.1,10.35-21.93.32C38.41,8.3,38.41,1.59,38.48,1.09Z"/>
+
+					</g>
+				</svg>
+			</div> <!-- wrapper -->
+
+		</div>
+		<!-- <div class="wave"><img src="img/i-wave1.png"></div> -->
+		<div class="clear"></div>
+	</section>
+	</section>
+	<section class="panel turqoise section">
+		<section class="about">
+		
+			<h2 id="about-mobile-h2">關於自由潛水</h2>
+
+			<div class="about-left-area">
+				<div class="img-box">
+					<img class="show" src="img/about-01.png">
+					<img src="img/about-02.png">
+					<img src="img/about-03.png">
+					<img src="img/about-04.png">
+					<img src="img/about-05.png">
+					<img src="img/about-06.png">
+				</div>	
+				<div class="box"></div>			
+			</div>	
+			<div class="about-right-area">
+			
+				<div class="content-V-center">
+					
+						<h2 id="about-scroll-h2">關於自由潛水</h2>
+						<p id="about-scroll-p">最早起源於西元前4500年的地中海為了採集資源，人類開始往海中進行探勘；不攜帶氧氣瓶，盡可能地潛入海中；藉由一口氣的時間，探索神秘寂靜的海底世界。
+						</p>
+						
+					<div class="moreIcon">
+						
+						<div class="moreBtn">更多</div>
+
+					</div>
+
+
+				</div>	
+
+				
+				
+				
+			</div>
+			<div class="clear"></div>	
+		</section> <!-- about -->
+	</section>
+	<section class="panel green section">
+		<section class="exp">
+			
+				<div class="item">
+					<h2>體驗自由潛水</h2>
+					<p>在無拘無束的海洋中，跟隨著自己的方向游，不需要攜帶氧氣瓶，只需要透過面鏡跟蛙鞋就能悠遊在水裡，靠著自己的一口氣彷彿化身為水裡的一條魚‧</p>
+
+					<div class="moreIcon">
+						
+						<div class="moreBtn expBtn">更多</div>
+
+					</div>
+
+				</div>
+			
+			<div class="clear"></div>
+		</section>
+	</section>
+	<section class="panel bordeaux section">
+		<section class="course">
+
+			<div class="all-item">
+				 
+				<div class="item-01 col-sm-4 tweenCourse">
+					<img class="c-img" src="img/course-left.png">
+					<p class="course-title"><b>基礎</b><br><span>自由潛水員</span></p>
+					<p class="course-content">建立靜態閉氣、動態閉氣、攀索式自由潛水與恆重自由潛水，至 10-16 米 /30-55 英尺的基本知識與技巧。
+					<img src="img/courseIcon.png">
+					</p>
+				</div>
+				<div class="item-02 col-sm-4 tweenCourse">
+					<img class="c-img" src="img/course-center.png">
+					<p class="course-title"><b>進階</b><br><span>自由潛水員</span></p>
+					<p class="course-content">進一步發展靜態閉氣、動態閉氣、攀索式自由潛水與恆重自由潛水，至 16-24 米 /55-80 英尺，更廣泛的知識與技巧。
+					<img src="img/courseIcon.png">
+					</p>
+				</div>
+				<div class="item-03 col-sm-4 tweenCourse">
+					<img class="c-img" src="img/course-right.png">
+					<p class="course-title"><b>名仕</b><br><span>自由潛水員</span></p>
+					<p class="course-content">進一步發展靜態閉氣、動態閉氣、攀索式自由潛水與恆重自由潛水，至 24-40 米 /80-130 英尺，延續的知識與技巧。
+					<img src="img/courseIcon.png">
+					</p>
+				</div>
+
+			</div>
+			
+			<div class="clear"></div>
+		</section>
+	</section>
+	<section class="panel aaa section">
+		<section class="coach">
+			<div class="coach-all">
+
+
+				
+			
+				<div class="coach-text">
+					
+					<div class="item">
+						<p>世界上沒有偉大的人，<br>
+							只有普通人迎接的巨大挑戰。</p>
+						<p>--- 東岳&nbsp;&nbsp;&nbsp;教練</p>
+					</div>
+					
+				</div>
+			
+				<div class="coach-map">
+					  <div id="map"></div>
+				</div>
+			
+
+				
+			</div>
+			
+			
+			
+		</section>
+	</section>
+</div>
+
+
+
+<script>
+	// $(function () { // wait for document ready
+		// init
+		// var controller = new ScrollMagic.Controller();
+
+
+		// var wipeAnimation = new TimelineMax()
+		// 	.fromTo("section.panel.turqoise", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+		// 	.fromTo("section.panel.green",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+		// 	.fromTo("section.panel.bordeaux", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+
+		
+		// new ScrollMagic.Scene({
+		// 		triggerElement: "#pinContainer",
+		// 		triggerHook: "onLeave",
+		// 		duration: "300%"
+		// 	})
+		// 	.setPin("#pinContainer")
+		// 	.setTween(wipeAnimation)
+		// 	.addIndicators()
+		// 	.addTo(controller);
+
+	$(document).ready(function() {
+		$('#pinContainer').fullpage();
+	});
+
+
+
+
+
+
+// });
+
+</script>
+
+
+</body>
+</html>

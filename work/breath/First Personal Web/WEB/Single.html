@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>半 選物</title>
+	<style type="text/css">
+	@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+*{margin: 0;
+  padding: 0;}
+
+ img{vertical-align: top;}
+ p {font-family: 'Noto Sans TC', sans-serif; font-weight: 300;}
+ ul li {font-family: 'Noto Sans TC', sans-serif; font-weight: 300;}
+ h3 {font-family: 'Noto Sans TC', sans-serif; font-weight: 300;}
+ h4 {font-family: 'Noto Sans TC', sans-serif; font-weight: 300;}
+
+ .clear{
+	width: 100%;
+	clear: both;}
+
+.head{width: 960px;
+	height: 150px;
+	  margin: auto;
+	  position: relative;}
+
+.logo{float: left;
+		margin-top:10px;}
+.logo img{width: 140px;	
+		height: 100px;	}
+
+.member{float: right;
+		position: absolute;
+		top: 10px;
+		right: 0px;}
+.member img{width: 30px;
+			height: 30px;}
+
+
+.menu{
+	width: 960px;
+	height: 60px;
+	text-align:center;
+	position:absolute;
+	bottom:0px;
+	margin: auto;
+	z-index: 1;}
+.menu > li{display:inline-block;
+			height: 40px;
+			/*width: 150px;*/
+			font-size: 20px;
+			position: relative;
+			text-align: center;	}
+.menu > li > a{display: block;
+			padding: 5px 40px;
+			background-color: #fff;
+			text-decoration: none;
+			color: #555;
+			/*background-color: rgba(254,250,242,1);*/}
+.menu ul{position: absolute;	
+		left: 0;
+		top: 100%;	
+		width: 100%;
+		background-color: #fff;
+		display: none;
+	list-style: none;}
+
+.menu ul a {height: 40px;
+			line-height: 40px;}
+.menu > li:hover ul{display: block;					}
+.menu > li  > ul > li:hover a{background-color: rgba(254,250,242,1);}
+.menu ul li{}
+.menu ul li a{display: block;
+			text-decoration: none;
+			color:#333;
+			font-size: 16px;
+			padding: 5px 5px;	}
+
+.head:after{content: '';
+			display: block;
+			clear: both;}
+
+
+.middle{width: 960px;
+		margin: auto;}
+
+
+
+.cata{width: 240px;
+	  float: left;}
+.c_txt{width: 100px;
+		text-align: left;
+		line-height: 30px;
+		margin: 100px 0 0 0;}
+.c_txt a{text-decoration: none;
+		color: #555;}
+.c_txt h3{margin-top: 30px;}
+.c_txt_s{color: #DA718B;}
+
+
+
+
+
+.product{width: 720px;
+		float: right;
+		margin-top: 100px; }
+.p_img{width: 400px;
+		height: 300px;
+		float: left;}
+.p_img img{width: 100%;}
+.p_txt{width: 280px;
+		float:left;
+		margin-left: 40px;  }
+.p_txt h3{padding-bottom: 5px;}		
+.p_txt p{padding: 2px 0;}	
+
+
+
+
+.buy{float: right;
+margin-top: 20px;
+margin-right: 50px;  }
+.buy p{display: inline;}
+.quantity{}
+button{background-color: #FFF;
+		padding: 2px 5px 2px 5px;
+		border: 1px solid #000;}
+
+
+
+
+.line{width: 680px;
+		height: 0;
+		border-top: 1px solid #777;
+		/*border: 1px 0 0 0;*/
+		float: right;
+		margin: 60px 20px 20px 20px;}
+
+
+
+
+
+.intro{width: 720px;
+		float: right;}
+.in_txt{margin: 60px 0 60px 0 ;
+		color: #666;}
+.in_img1 img{width: 330px;
+			height: 490px;
+			padding-bottom: 60px;}
+.in_img2 img{width: 580px;
+			height: 380px;
+			padding-bottom: 60px;}
+.in_img3 img{width: 330px;
+			height: 490px;
+			padding-bottom: 60px;}
+
+
+
+
+
+
+.foot{width: 960px;
+	height: 300px;
+	margin: auto;
+	background-color: rgba(254,250,242,1);
+	position: relative;}
+.foot img{width: 140px;height: 100px;
+		position: absolute;
+		top: 40px;
+		left: 30px;}
+.foot p{color: #555;}
+.f_txt{position: absolute;
+	top: 160px;
+	left: 30px;}
+
+.f_item1{position: absolute;
+		top: 40px;
+		right: 430px;
+		}
+.f_item2{position: absolute;
+		top: 40px;
+		right: 330px;
+		}
+.f_item3{position: absolute;
+		top: 40px;
+		right: 230px;
+		}
+.f_item4{position: absolute;
+		top: 40px;
+		right: 130px;
+		}
+.f_item5{position: absolute;
+		top: 40px;
+		right:30px;
+		}
+.f_item1 a{text-decoration: none;
+			color: #333 ;}
+.f_item2 a{text-decoration: none;
+			color: #333 ;}
+.f_item3 a{text-decoration: none;
+			color: #333 ;}
+.f_item4 a{text-decoration: none;
+			color: #333 ;}
+.f_item5 a{text-decoration: none;
+			color: #333 ;}
+
+.f_f{position: absolute;
+	bottom: 15px;
+	right: 350px;
+	margin: auto;}
+
+
+
+
+		
+	</style>
+</head>
+<body>
+	
+<!-- head=============================================================== -->
+
+<div class="head">
+	
+	<div class="logo">
+	<a href="#">
+	<img src="LOGO.png">
+	</a>
+	</div>
+
+	<div class="member">
+		<a href="#"><img src="CART.png"></a>
+		<a href="#"><img src="mem.png"></a>
+	</div>
+
+	<ul class="menu">
+		<li>
+			<a href="#">最新消息</a>
+			<ul>
+				<li><a href="#">即時活動</a></li>
+				<li><a href="#">新品特輯</a></li>
+			</ul>
+		</li>
+		<li><a href="#">香氛</a>
+			<ul>
+				<li><a href="#">身體香香</a></li>
+				<li><a href="#">環境香香</a></li>
+			</ul>
+		</li>
+		<li><a href="#">生活雜貨</a>
+			<ul>
+				<li><a href="#">文房具</a></li>
+				<li><a href="#">餐廳</a></li>
+				<li><a href="#">浴室</a></li>
+				<li><a href="#">其他</a></li>
+			</ul>
+		</li>
+		<li><a href="#">關於半選物</a>
+			<ul>
+				<li><a href="#">品牌精神</a></li>
+				<li><a href="#">購物流程</a></li>
+				<li><a href="#">實體店鋪</a></li>
+				<li><a href="#">合作聯繫</a></li>
+			</ul>
+		</li>
+
+	</ul>
+
+</div>
+
+<!-- middle=============================================================== -->
+
+<div class="middle">
+
+<!-- cata=============================================================== -->
+
+
+<div class="cata">
+	<div class="c_txt">
+		<a href="#"><h3>香氛</h3></a>
+			<a href="#"><p class="c_txt_s">身體香香</p></a>
+			<a href="#"><p>環境香香</p></a>
+
+		<a href="#"><h3>生活雜貨</h3></a>
+			<a href="#"><p>文房具</p></a>
+			<a href="#"><p>餐廳</p></a>
+			<a href="#"><p>浴室</p></a>
+			<a href="#"><p>其他</p></a>
+
+		<a href="#"><h3>最新</h3></a>
+			<a href="#"><p>新品入荷</p></a>
+			<a href="#"><p>即時折扣</p></a>		
+	</div>
+
+	
+</div>
+
+
+
+<!-- product =============================================================== -->
+
+<div class="product">
+	<div class="p_img">
+		<img src="Single01.jpg">
+	</div>
+	<div class="p_txt">
+		<h3>Maison Louis Marie </h3>
+		<h3>滾珠芳香油</h3>
+		<p>──────────────</p>
+		<p>No.04 Bois de Balincourt</p>
+		<p>Top Note: sandalwood, cedarwood</p>
+		<p>Mid Note: vetiver, nutmeg, cinnamon</p>
+		<p>Base Note: amber wood</p>
+		<p>前調：檀香、雪松</p>
+		<p>中調：香根草、肉荳蔻、肉桂</p>
+		<p>基調：琥珀木</p>
+	</div>
+	<div class="buy">
+		<form action="" method="">
+			<p>數量&nbsp</p>
+			<input list="quantity" type="text" name="" size="8">
+			<datalist id="quantity">
+				<option value="1"></option>
+				<option value="2"></option>
+				<option value="3"></option>
+				<option value="4"></option>
+				<option value="5"></option>
+			</datalist>&nbsp
+
+			<button type="submit">
+				加入購物車
+			</button>
+		</form>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- line =============================================================== -->
+
+
+<div class="line"></div>
+
+
+<!-- Intro =============================================================== -->
+
+<div class="intro">
+	<div class="in_txt">
+		<p>1792年，法國植物學先驅Louis Marie Aubert du Petit Thouars <br>
+		因法國大革命而被迫流放到馬達加斯加與附近群島 <br>
+		原生的環境以及島嶼多變的地形與氣候 <br>
+		使他在那裡找到許多前所未見的植物並製作成標本 <br>
+		長達十年的時間已經收集了超過兩千種原生植物。 <br> <br>
+
+		兩百年後，Marie du Petit Thouars  <br>
+		於比利時成立「Maison Louis Marie」蠟燭品牌，並與母親一同於溫室實驗各種氣味 <br>
+		作品中洋溢散發著獨特的花朵香氣與優雅的木質香味，細緻的質地 <br>
+		以純天然大豆製成，能夠持續燃燒六十個小時 <br>
+		乳白色的燭身與包裝，完美傳承典雅的法式浪漫。 <br> <br> <br>
+
+		- Perfume oil 芳香油系列（滾珠瓶）15 ml <br>
+		- Eau de Toilette 香水系列（噴霧瓶）50 ml <br> <br> <br>
+
+		芳香油濃度較高，香味較持久 <br>
+		滾珠瓶的設計較好控制用量，也能選擇特定部位點上些許香氣，便於旅行時攜帶； <br>
+		香水以噴霧瓶方式使用 <br>
+		能讓香氣大面積自然的附著在全身； <br>
+		復古的包裝設計除了收藏，整體禮品盒裝也非常適合做禮品贈送。 <br> <br>
+
+		香水的前中後味 <br>
+		會隨著每個人的賀爾蒙與體溫差異，在皮膚上產生獨特氣味 <br>
+		擁有迷人且充滿想像的不同個性風貌。 <br> <br> <br> <br>
+
+
+		四款香氣 <br> <br>
+ 
+		No.02 Le Long Fond (無噴霧瓶) <br>
+		Top Note： hinoki wood　(檜木) <br>
+		Mid Note： cedarwood, patchouli　(雪松，天竺薄荷) <br>
+		Base Note： white musk　(白麝香) <br> <br>
+
+		No.04 Bois de Balincourt   <br>
+		Top Note： sandalwood, cedarwood　(檀香，雪松) <br>
+		Mid Note： vetiver, nutmeg, cinnamon　(香根草，肉荳蔻，肉桂) <br>
+		Base Note： amber wood　(琥珀木) <br> <br>
+
+		No.09 Vallée de Farney <br>
+		Top Note： Grapefruit, Orange, Black Pepper　(柚子，橙，黑胡椒) <br>
+		Mid Note： cedarwood, Patchouli, Geranium　(雪松，天竺薄荷，天竺葵) <br>
+		Base Note： Vetiver, Amber, Musk, Benzoin　(香根草，琥珀，麝香，安息香) <br> <br>
+
+		Antidris/Cassis <br>
+		Top note： Cassis, bergamot, black pepper　(黑醋栗，佛手柑，黑胡椒) <br>
+		Mid Note： White rose　(白玫瑰) <br>
+		Base note： Oakmoss, musk, tonka　(橡苔，麝香，零陵香)</p>
+
+	</div>
+	<div class="in_img1">
+		<img src="Single02.jpg">
+	</div>
+	<div class="in_img2">
+		<img src="Single03.jpg">
+	</div>
+	<div class="in_img3">
+		<img src="Single04.jpg">
+	</div>
+</div>
+
+
+
+
+
+</div> <!-- middle的 -->
+<div class="clear">	</div>
+<!-- foot=============================================================== -->
+
+<div class="foot">
+<a href="#"><img src="LOGO.png"></a>
+	<div class="f_txt">
+		<p>
+		半 選物 <br>
+		+886-3-1234-5566<br>
+		桃園市中壢區中央路232巷100號<br>
+		Halfsoul@goodmail.com.tw
+ 		</p>
+	</div>
+	<div class="f_item1">
+		<p>
+		<a href="#">最新消息</a><br><br>
+		<a href="#">新品入荷</a><br>
+		<a href="#">即時折扣</a>
+		</p>
+	</div>
+	<div class="f_item2">
+		<p>
+		<a href="#">香氛</a><br><br>
+		<a href="#">身體香香</a><br>
+		<a href="#">環境香香</a>	
+		</p>
+	</div>
+	<div class="f_item3">
+		<p>
+		<a href="#">生活雜貨</a><br><br>
+		<a href="#">文房具</a><br>
+		<a href="#">餐廳</a><br>
+		<a href="#">浴室</a><br>
+		<a href="#">其他</a>	
+		</p>
+	</div>
+	<div class="f_item4">
+		<p>
+		<a href="#">關於半選物</a><br><br>
+		<a href="#">品牌精神</a><br>
+		<a href="#">購物流程</a><br>
+		<a href="#">實體店鋪</a><br>
+		<a href="#">合作聯繫</a>
+		</p>
+	</div>
+	<div class="f_item5">
+		<p>
+		<a href="#">會員功能</a><br><br>
+		<a href="#">購物流程</a><br>
+		<a href="#">服務條款</a><br>
+		<a href="#">隱私權宣告</a>
+		</p>
+	</div>
+	<div class="f_f"><p>2017 © Half company. All rights reserved</p></div>
+</div>
+
+
+	
+<br><br><br>
+</body>
+</html>
